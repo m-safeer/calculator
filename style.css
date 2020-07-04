@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     background-image: url(bg.jpg);
 }
@@ -13,34 +18,18 @@ body {
     padding-top: 20px;
     color: white;
 }
-.calculator {
-    width: 25%;
-    border: 3px solid grey;
-    margin: auto;
-}
-.textarea {
-    margin: auto;
-    width: 100%;
-}
-.calculator input {
-    width: 99%;
-    background-color: rgb(224, 224, 224);
-    color: black;
-    padding: 20px 0px;
-    font-size: 18px;
+input {
+    height: 13vh;
+    font-size: 18px!important;
 }
 .clrbtn {
-    width: 44%;
-    margin: 5px;
-    padding: 1.2em 0px;
-}
-.extbtn {
-    width: 20%;
-    margin: 5px;
-    padding: 1em 0px;
+    width: 44%!important;
 }
 .btn {
     width: 20%;
     margin: 5px;
-    padding: 1em 0px;
+    padding: 1em 0px!important;
+}
+.border {
+    border: 3px solid black!important;
 }
