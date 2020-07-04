@@ -4,44 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Standard Calculator</title>
 </head>
 <body>
     <div class="heading">
         <h1>Standard Calculator App</h1>
     </div>
-    <div class="calculator">
-        <div class="textarea">
-            <input id="result" type="text">
-        </div>
-        <div>
-            <button class="clrbtn" onclick="clrResult()">C</button>
-            <button class="extbtn" onclick="getSqr()">X <sup> 2 </sup> </button>
-            <button class="extbtn" onclick="getCube()">X <sup> 3 </sup> </button>
-        </div>
-        <div>
-            <button class="btn" onclick="getNumber('7')">7</button>
-            <button class="btn" onclick="getNumber('8')">8</button>
-            <button class="btn" onclick="getNumber('9')">9</button>
-            <button class="btn" onclick="getNumber('*')">x</button>
-        </div>
-        <div>
-            <button class="btn" onclick="getNumber('4')">4</button>
-            <button class="btn" onclick="getNumber('5')">5</button>
-            <button class="btn" onclick="getNumber('6')">6</button>
-            <button class="btn" onclick="getNumber('/')">/</button>
-        </div>
-        <div>
-            <button class="btn" onclick="getNumber('1')">1</button>
-            <button class="btn" onclick="getNumber('2')">2</button>
-            <button class="btn" onclick="getNumber('3')">3</button>
-            <button class="btn" onclick="getNumber('-')">-</button>
-        </div>
-        <div>
-            <button class="btn" onclick="getResult()">=</button>
-            <button class="btn" onclick="getNumber('0')">0</button>
-            <button class="btn" onclick="getNumber('.')">.</button>
-            <button class="btn" onclick="getNumber('+')">+</button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" mx-auto col-sm-12 col-md-3 col-lg-3">
+                <div class="bg-light border p-2">
+                    <div class="p-2">
+                        <input class="border-primary w-100 p-2" id="result" type="text">
+                    </div>
+                    <div>
+                        <button class="clrbtn btn btn-outline-primary" onclick="clrResult()">C</button>
+                        <button class="btn btn-outline-primary" onclick="getSqr()">X <sup> 2 </sup> </button>
+                        <button class="btn btn-outline-primary" onclick="getCube()">X <sup> 3 </sup> </button>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline-primary" onclick="getNumber('7')">7</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('8')">8</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('9')">9</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('*')">x</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline-primary" onclick="getNumber('4')">4</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('5')">5</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('6')">6</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('/')">/</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline-primary" onclick="getNumber('1')">1</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('2')">2</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('3')">3</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('-')">-</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline-primary" onclick="getResult()">=</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('0')">0</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('.')">.</button>
+                        <button class="btn btn-outline-primary" onclick="getNumber('+')">+</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="foot">
